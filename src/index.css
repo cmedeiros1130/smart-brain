@@ -1,13 +1,50 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  background: linear-gradient(86deg, #ff5edf 0%, #04c8de 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.particals {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+center {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-out-nav {
+  text-decoration: underline;
+  color: black;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.sign-out-nav:hover,
+.image-link-btn:hover {
+  box-shadow: 2px 2px 2px 4px;
+}
+
+.logo-div {
+  margin-top: 0;
+}
+
+.tilt {
+  border-radius: 2%;
+  box-shadow: 1px 2px 2px 2px;
+  background: linear-gradient(86deg, #ff5edf 0%, #04c8de 100%);
+}
+
+.inner-tilt {
+  padding: 3px;
+}
+
+.brain-logo {
+  padding-top: 5px;
 }
