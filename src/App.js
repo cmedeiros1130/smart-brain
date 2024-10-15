@@ -1,65 +1,22 @@
-import React, { Component } from "react";
-//import { ParallaxTilt } from "react-parallax-tilt";
-import ParticlesBg from "particles-bg";
-import Clarifai from "clarifai";
-import FaceRecognition from "./components/FaceRecognition/FaceRecognition";
-import Navigation from "./components/Navigation/navigation";
-import Signin from "./components/SignIn/SignIn";
-import Register from "./components/Register/Register";
-import Logo from "./components/Logo/Logo";
-import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
-import Rank from "./components/Rank/Rank";
+import React from "react";
 import "./App.css";
-import Particles from "react-tsparticles";
+//import Particles from "react-tsparticles";
+import Navigation from "./components/Navigation/navigation";
+import Logo from "./components/Logo/Logo";
+import Rank from "./components/Rank/Rank";
+import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
 
-/*const app = new Clarifai.App({
-  apiKey: process.env.REACT_APP_CLARIFAI_API_KEY, // Ensure process.env is used
-});
-
-console.log("API Key:", process.env.REACT_APP_CLARIFAI_API_KEY); // Log to check if it's defined*/
-
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      input: "",
-      /*imageUrl: "",
-      box: {},
-      route: "signin",
-      isSignedIn: false,
-      user: {
-        id: "",
-        name: "",
-        email: "",
-        entries: 0,
-        joined: "",
-      },*/
-    };
-  }
-
-  onInputChange = (event) => {
-    console.log(event.target.value);
-    //this.setState({ input: event.target.value });
-  };
-
-  onButtonSubmit = () => {
-    console.log("click");
-  };
-
-  render() {
-    return (
-      <div className="App">
-        <Particles className="particles" />
-        <Navigation />
-        <Logo />
-        <Rank />
-        <ImageLinkForm
-          onInputChange={this.onInputChange}
-          onButtonSubmit={this.onButtonSubmit}
-        />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <Navigation />
+      <Logo />
+      <Rank />
+      <ImageLinkForm />
+    </div>
+  );
 }
 
 export default App;
+
+//<Particles className="particles" />
