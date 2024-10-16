@@ -11,7 +11,7 @@ import Rank from "./components/Rank/Rank";
 import "./App.css";
 
 const app = new Clarifai.App({
-  apiKey: "YOUR API KEY HERE",
+  apiKey: process.env.REACT_APP_API_KEY,
 });
 
 class App extends Component {
