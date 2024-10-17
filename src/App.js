@@ -10,8 +10,9 @@ import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
 import Rank from "./components/Rank/Rank";
 import "./App.css";
 
+// Clarifai app initialization
 const app = new Clarifai.App({
-  apiKey: process.env.REACT_APP_API_KEY,
+  apiKey: "362ff507e56147569ba41043676b59b6", // Hardcoded API key here
 });
 
 class App extends Component {
