@@ -1,0 +1,90 @@
+/* Form container without white background */
+article {
+  background: none; /* Remove white background */
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 3rem auto;
+}
+
+/* General font styles */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #f4f7fa; /* Light background */
+}
+
+legend {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Label styles */
+label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Input fields aligned */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 24px); /* Adjust width for alignment */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+  display: block; /* Ensures input is block-level */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Button styles */
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  article {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  legend {
+    font-size: 1.6rem;
+  }
+
+  input[type="submit"] {
+    font-size: 1rem;
+  }
+}
