@@ -50,9 +50,7 @@ class Register extends React.Component {
             <fieldset id="sign_up">
               <legend className="f1 fw6 ph0 mh0">Register</legend>
               <div className="mt3">
-                <label className="db fw6 lh-copy f6" htmlFor="name">
-                  Name
-                </label>
+                <label htmlFor="name">Name</label>
                 <input
                   type="text"
                   name="name"
@@ -61,9 +59,7 @@ class Register extends React.Component {
                 />
               </div>
               <div className="mt3">
-                <label className="db fw6 lh-copy f6" htmlFor="email-address">
-                  Email
-                </label>
+                <label htmlFor="email-address">Email</label>
                 <input
                   type="email"
                   name="email-address"
