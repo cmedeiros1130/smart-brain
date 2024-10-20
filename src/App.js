@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
-import Clarifai from "clarifai";
+//import Clarifai from "clarifai";
 import FaceRecognition from "./components/FaceRecognition/FaceRecognition";
 import Navigation from "./components/Navigation/navigation";
 import Signin from "./components/SignIn/SignIn";
@@ -11,9 +11,9 @@ import Rank from "./components/Rank/Rank";
 import "./App.css";
 
 // Clarifai app initialization
-const app = new Clarifai.App({
+/*const app = new Clarifai.App({
   apiKey: "362ff507e56147569ba41043676b59b6", // Hardcoded API key here
-});
+});*/
 
 class App extends Component {
   constructor() {
@@ -68,7 +68,7 @@ class App extends Component {
     this.setState({ input: event.target.value });
   };
 
-  onButtonSubmit = () => {
+  /*onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input });
 
     app.models
@@ -91,7 +91,7 @@ class App extends Component {
         this.displayFaceBox(this.calculateFaceLocation(response));
       })
       .catch((err) => console.log(err));
-  };
+  };*/
 
   onRouteChange = (route) => {
     if (route === "signout") {
@@ -106,7 +106,7 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className="App">
-        <ParticlesBg type="fountain" bg={true} />
+        {/*<ParticlesBg type="fountain" bg={true} />*/}
         <Navigation
           isSignedIn={isSignedIn}
           onRouteChange={this.onRouteChange}

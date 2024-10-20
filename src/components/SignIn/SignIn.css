@@ -1,0 +1,100 @@
+/* Form container without a white background */
+article {
+  background: none; /* Remove the white background */
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 3rem auto;
+}
+
+/* General font styles */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #f4f7fa; /* Light background for contrast */
+}
+
+.sign-in-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Label Styles */
+.sign-in-label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Input fields aligned */
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 24px); /* Ensures inputs align with padding */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+  display: block; /* Forces the input to be block-level */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Button Styles */
+.sign-in-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 1rem;
+}
+
+.sign-in-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Register Link */
+.lh-copy p {
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.lh-copy p:hover {
+  text-decoration: underline;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  article {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .sign-in-button {
+    font-size: 1rem;
+  }
+
+  .sign-in-heading {
+    font-size: 1.6rem;
+  }
+}
